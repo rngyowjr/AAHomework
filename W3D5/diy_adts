@@ -1,19 +1,40 @@
 class Stack
     def initialize
-      @ivar = []
+        @ivar = []
     end
 
     def push(el)
-      @ivar << el
+        @ivar << el
     end
 
     def pop
-      new_var = @ivar[-1]
-      @ivar = @ivar[0..-2]
-      new_var
+        new_var = @ivar[-1]
+        @ivar = @ivar[0..-2]
+        new_var
     end
 
     def peek
-      @ivar[0]
+        @ivar[0]
+    end
+  end
+
+
+  class Queue
+    def initialize
+        @ivar = []
+    end
+
+    def enqueue(el)
+        @ivar << el
+    end
+
+    def dequeue
+        new_var = @ivar[0]
+        @ivar = @ivar[1..-1]
+        new_var
+    end
+
+    def peek
+        @ivar[0]
     end
   end
