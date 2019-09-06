@@ -1,0 +1,19 @@
+class Stack
+    def initialize
+      @ivar = []
+    end
+
+    def push(el)
+      @ivar << el
+    end
+
+    def pop
+      new_var = @ivar[-1]
+      @ivar = @ivar[0..-2]
+      new_var
+    end
+
+    def peek
+      @ivar[0]
+    end
+  end
