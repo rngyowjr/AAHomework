@@ -38,3 +38,25 @@ class Stack
         @ivar[0]
     end
   end
+
+  class Map 
+    def initialize
+        @ivar = {}
+    end
+
+    def set(key, val)
+        @ivar[key] = val
+    end
+
+    def get(key)
+        @ivar[key]
+    end
+
+    def delete(key)
+        @ivar[key] = []
+    end
+
+    def show
+        @ivar[0]
+    end
+  end
